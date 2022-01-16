@@ -11,7 +11,7 @@ const ChampionsRoutes = require('./src/api/champions/champions.routes')
 const ClassesRoutes = require('./src/api/classes/classes.routes')
 const SubclassesRoutes = require('./src/api/subclasses/subclasses.routes')
 const UsersRoutes = require('./src/api/user/user.routes')
-const documentation = require('./src/utils/Documentation/documentation.json')
+const documentation = require('./src/utils/documentation/documentation.json')
 
 
 // Requerimos el controlador de errores

@@ -25,10 +25,26 @@ const getClass = async (req, res, next) => {
   }
 };
 
+const postNewClass = async (req, res, next) => {
+  try {
+    const newClass = new Classe();
+    newClass.name = req.body.name;
+    newClass.description = req.body.description;
+    newClass.subclasses= req.body.subclasses;
+  
+    const classDb = await newClass.save();
+  
+    return res.status(201).json(classDb);
+  } catch (error) {
+    return next(setError(500, "class not saved"))
+  }
+};
+
 
 
 module.exports = {
   getAllClasses,
   getClass,
+  postNewClass
   
 };

@@ -1,14 +1,13 @@
 {
-  "name": "music-server",
+  "name": "lolapi",
   "version": "1.0.0",
-  "description": "Plataforma User - Generos musicales",
+  "description": "LOL API",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "artist-seed": "node src/utils/seeds/artist.seed"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": " Andrés, Alejandro & Álvaro",
+  "author": "Alejandro",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",

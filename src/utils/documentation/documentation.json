@@ -1,0 +1,180 @@
+{
+  "users": [
+    {
+      "endpoint": "/api/users/register",
+      "action": "POST",
+      "isAuth": "false",
+      "description": "Endpoint to register a new collaborator with a name, password and e-mail",
+      "response": {
+        "name": "juan",
+        "email": "Juan3@gmail.com"
+      }
+    },
+    {
+      "endpoint": "/api/users/login",
+      "action": "POST",
+      "isAuth": "false",
+      "description": "Login with your name, password and e-mail. You have to be login to post a new champion",
+      "response": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTQxNmUwYmZmZTljZmQ5MmZjOGZiNCIsImVtYWlsIjoiSnVhbjNAZ21haWwuY29tIiwiaWF0IjoxNjQyMzQ1MTY3LCJleHAiOjE2NDI0MzE1Njd9.VXkwK6hyy6PTmJp6eg_4Tf9zScP5XXe7XXf399kPjmk"
+      }
+    },
+    {
+      "endpoint": "/api/users/logout",
+      "action": "POST",
+      "isAuth": "true",
+      "description": "Logout with your name, password and e-mail",
+      "response": {
+        "token": "null"
+      }
+    },
+    {
+      "endpoint": "/api/users/:id",
+      "action": "GET",
+      "isAuth": "true",
+      "description": "Get to know a collaborator by ID",
+      "response": {
+        "name": "Alex",
+        "email": "alejandrorueda@gmail.com"
+      }
+    }
+  ],
+  "champions": [
+    {
+      "endpoint": "/api/champions/",
+      "action": "GET",
+      "isAuth": "false",
+      "description": "Find all the champions in a format like the response",
+      "response": {
+        "_id": "61e41969ac28d58fff77d916",
+        "habilities": [
+          "DeathBringer Stance",
+          "The Darkin Blade",
+          "Infernal Chains",
+          "Umbral Dash",
+          "World Ender"
+        ],
+        "name": "Aatrox",
+        "img": "https://res.cloudinary.com/dj4tyjknv/image/upload/v1642338665/artist-images/mopaxp16zx7rkikoozck.png",
+        "baseHp": 580,
+        "baseMana": 0,
+        "baseMovSpeed": 345,
+        "preferedLane": "Top",
+        "createdAt": "2022-01-16T13:11:05.129Z",
+        "updatedAt": "2022-01-16T13:11:05.129Z",
+        "__v": 0
+      }
+    },
+
+    {
+      "endpoint": "/api/champions/:id",
+      "action": "GET",
+      "isAuth": "false",
+      "description": "Find a champion by ID",
+      "response": {
+        "_id": "61e41969ac28d58fff77d916",
+        "habilities": [
+          "DeathBringer Stance",
+          "The Darkin Blade",
+          "Infernal Chains",
+          "Umbral Dash",
+          "World Ender"
+        ],
+        "name": "Aatrox",
+        "img": "https://res.cloudinary.com/dj4tyjknv/image/upload/v1642338665/artist-images/mopaxp16zx7rkikoozck.png",
+        "baseHp": 580,
+        "baseMana": 0,
+        "baseMovSpeed": 345,
+        "preferedLane": "Top",
+        "createdAt": "2022-01-16T13:11:05.129Z",
+        "updatedAt": "2022-01-16T13:11:05.129Z",
+        "__v": 0
+      }
+    },
+    {
+      "endpoint": "/api/champions/",
+      "action": "POST",
+      "isAuth": "true",
+      "description": "Post a champion with the next fields",
+      "response": {
+        "_id": "61e41969ac28d58fff77d916",
+        "habilities": [
+          "DeathBringer Stance",
+          "The Darkin Blade",
+          "Infernal Chains",
+          "Umbral Dash",
+          "World Ender"
+        ],
+        "name": "Aatrox",
+        "img": "https://res.cloudinary.com/dj4tyjknv/image/upload/v1642338665/artist-images/mopaxp16zx7rkikoozck.png",
+        "baseHp": 580,
+        "baseMana": 0,
+        "baseMovSpeed": 345,
+        "preferedLane": "Top",
+        "createdAt": "2022-01-16T13:11:05.129Z",
+        "updatedAt": "2022-01-16T13:11:05.129Z",
+        "__v": 0
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "endpoint": "/api/subclasses/",
+      "action": "GET",
+      "isAuth": "false",
+      "description": "Find all the subclasses in the next format",
+      "response": {
+        "_id": "61dd9a96706d86b81cc2da5b",
+		"name": "Catchers",
+		"description": "Catchers specialize in locking down opponents or, in some cases, entire battlefields by creating intense zones of threat that only foolish enemies would dare wade through.",
+		"createdAt": "2022-01-11T14:56:22.254Z",
+		"updatedAt": "2022-01-11T14:56:22.254Z",
+		"__v": 0
+      }
+    },
+    {
+        "endpoint": "/api/subclasses/:id",
+        "action": "GET",
+        "isAuth": "false",
+        "description": "Find a subclass by ID",
+        "response": {
+          "_id": "61dd9a96706d86b81cc2da5b",
+          "name": "Catchers",
+          "description": "Catchers specialize in locking down opponents or, in some cases, entire battlefields by creating intense zones of threat that only foolish enemies would dare wade through.",
+          "createdAt": "2022-01-11T14:56:22.254Z",
+          "updatedAt": "2022-01-11T14:56:22.254Z",
+          "__v": 0
+        }
+      }
+  ],
+  "classes" : [
+    {
+        "endpoint": "/api/classes/",
+        "action": "GET",
+        "isAuth": "false",
+        "description": "Find all the classes and show you in the next format",
+        "response": {
+          "_id": "61dd9a96706d86b81cc2da5b",
+          "name": "Catchers",
+          "description": "Catchers specialize in locking down opponents or, in some cases, entire battlefields by creating intense zones of threat that only foolish enemies would dare wade through.",
+          "createdAt": "2022-01-11T14:56:22.254Z",
+          "updatedAt": "2022-01-11T14:56:22.254Z",
+          "__v": 0
+        }
+      },
+      {
+        "endpoint": "/api/classes/:id",
+        "action": "GET",
+        "isAuth": "false",
+        "description": "Find a class by ID",
+        "response": {
+          "_id": "61dd9a96706d86b81cc2da5b",
+          "name": "Catchers",
+          "description": "Catchers specialize in locking down opponents or, in some cases, entire battlefields by creating intense zones of threat that only foolish enemies would dare wade through.",
+          "createdAt": "2022-01-11T14:56:22.254Z",
+          "updatedAt": "2022-01-11T14:56:22.254Z",
+          "__v": 0
+        }
+      }  
+  ]
+}
